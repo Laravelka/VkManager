@@ -1,0 +1,6 @@
+locale: en # локализация (messages.yml)
+peer_id: 2000000001 # id беседы
+api_version: 5.131 # версия VK API
+access_token: token # токен группы
+message_delay: 5 # задержка в секундах
+forbidden_words: хуй # @all,@online,@offline # список запрещенных слов, которые можно отправить в вк

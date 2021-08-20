@@ -1,0 +1,25 @@
+name: VkManager
+prefix: VKM
+main: ru.laravelka.VkManager.Main
+website: https://laravelka.ru/repo/java/VkManager
+version: 1.1.6 BETA
+api-version: 1.16
+description: Менеджер вконтакте
+commands:
+  vkmanager:
+    description: Main command for VkManager
+    permission: vkm.use
+    aliases: [vkm]
+    usage: /vkm <message>
+permissions:
+  vkm.*:
+    children:
+      vkm.use: true
+      vkm.bypass.*: true
+  vkm.bypass.*:
+    children:
+      vkm.bypass.delay: true
+      vkm.bypass.forbiddenWords: true
+  vkm.use:
+    default: true
+    description: Использование команды
